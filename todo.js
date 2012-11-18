@@ -1,7 +1,7 @@
 $('form').submit(function(){
   if ($('input').val() !== '' ) {
     var input_value = $('input').val();
-    $('ul').append('<li>' + '<div class="check"></div>' + input_value + '<a href="#">X</a>' + '</li>');
+    $('ul').append('<li>' + '<span class="check">&nbsp;</span>' + input_value + '<a href="#">X</a>' + '</li>');
   };
 
   $('input').val(''); // clears text input after submit
